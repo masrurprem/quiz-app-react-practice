@@ -1,9 +1,8 @@
-import React from "react";
 import questions from "./questions";
 import { useState } from "react";
 
-function app() {
-  // necessary variables
+function App() {
+  // necessary state variables
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -11,6 +10,7 @@ function app() {
   const [isFinished, setIsFinished] = useState(false);
 
   //necessary functions
+
   // # handle answer click
   const handleAnswerClick = (index) => {
     if (isAnswered || isFinished) {
@@ -93,4 +93,4 @@ function app() {
   );
 }
 
-export default app;
+export default App;
